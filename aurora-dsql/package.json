@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "@aws-sdk/core": "^3.587.0",
+        "@aws-sdk/credential-providers": "^3.587.0",
+        "@smithy/protocol-http": "^4.0.0",
+        "@smithy/signature-v4": "^3.0.0",
+        "pg": "^8.11.5"
+    }
+}
