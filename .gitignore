@@ -6,6 +6,8 @@ keynote 1
 
 organizations
 
+*.zip
+
 # node
 
 # Logs
