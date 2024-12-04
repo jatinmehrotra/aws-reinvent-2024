@@ -108,9 +108,9 @@ export const handler = async (event) => {
     try {
         const token = await signer.getAuthToken();
         await interactWithDatabase(token, endpoint);
-        return { statusCode: 200, message: "Operation on Aurora DSQL completed successfully" };
+        return { statusCode: 200, message: "Operation completed successfully" };
     } catch (error) {
         console.error("[handler] Error:", error);
-        return { statusCode: 500, message: "Operation on Aurora DSQL failed" };
+        return { statusCode: 500, message: "Operation failed" };
     }
 };
