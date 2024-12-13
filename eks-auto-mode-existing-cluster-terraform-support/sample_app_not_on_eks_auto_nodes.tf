@@ -1,3 +1,5 @@
+# // This will be NOT deployed on EKS Auto Nodes
+
 # resource "kubectl_manifest" "workload_not_on_eks_auto_node" {
 #   yaml_body = <<YAML
 # apiVersion: apps/v1
