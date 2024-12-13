@@ -9,12 +9,15 @@ module "eks" {
   vpc_id     = module.vpc.vpc_id
   subnet_ids = module.vpc.private_subnets
 
-  # To enable EKS Auto Mode for Existing cluster
-  bootstrap_self_managed_addons = true
-  cluster_compute_config = {
-    enabled    = true
-    node_pools = ["general-purpose"]
-  }
+  # Uncomment this to enable EKS Auto Mode for Existing cluster
+
+  # bootstrap_self_managed_addons = true
+  # cluster_compute_config = {
+  #   enabled    = true
+  #   node_pools = ["general-purpose"]
+  # }
+
+
 
   # Cluster access entry
   # To add the current caller identity as an administrator
